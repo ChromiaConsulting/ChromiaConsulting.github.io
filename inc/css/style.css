@@ -1,0 +1,39 @@
+body{
+font-family: 'Lato', sans-serif;
+margin: 0;
+background: rgb(33,39,59);
+background: linear-gradient(90deg, rgba(33,39,59,1) 0%, rgba(75,62,83,1) 100%);
+}
+
+.containo{
+	width: 90vw;
+	margin: 0 auto;
+	max-width: 1340px;
+}
+
+h1{
+	font-family: 900;
+	line-height: 1em;
+	font-size: calc(2rem + 0.25vw);
+}
+
+p, a, .icono{
+	font-weight: 300;
+	font-size: 1rem;
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.icono{
+	fill: #fff;
+	margin-right: 0.5rem;
+}
+
+.navbar-top{
+	background: #30106b;
+	color: #fff;
+	padding: 1rem;
+	border-bottom: 3px solid #fff;
+}
