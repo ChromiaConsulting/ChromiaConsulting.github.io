@@ -1,10 +1,29 @@
+
+:root {
+  --blue: #2E8BC0;
+   --baby-blue: #B1D4E0;
+  --midnight-blue: #145DA0;
+  --darkblue: #0C2D48;
+  --orange: #eba423;
+}
+
 body{
 font-family: 'Lato', sans-serif;
 margin: 0;
-background: #2C1245;
+background: #f7f7f7;
 position: relative;
 min-height: 100vh;
 }
+
+
+section{
+	padding: 3rem 0;
+}
+
+section:nth-child(even){
+background: #f1f1f1;
+}
+
 
 .backo{
 position: absolute;
@@ -22,10 +41,26 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 	position: relative;
 }
 
-h1{
-	font-family: 900;
+h1,h2,h3,h4,h5{
+		font-weight: 300;
 	line-height: 1em;
+	color: var(--blue);
+}
+
+h1{
+		font-weight: 900;
 	font-size: calc(2rem + 0.25vw);
+}
+
+
+#home .titlezone{
+		padding: 0 1rem;
+}
+
+#home .titlezone hr{
+	border: 2px solid var(--orange);
+	max-width: 10rem;
+	margin-left: 0;
 }
 
 #home .titlezone h1 span{
@@ -35,14 +70,14 @@ h1{
 p, a, .icono{
 	font-weight: 300;
 	font-size: 1rem;
-	color: #fff;
+	color: var(--darkblue);
 	text-decoration: none;
 	display: flex;
 	align-items: center;
 }
 
 .icono{
-	fill: #fff;
+	fill: var(--blue);
 	margin-right: 0.5rem;
 }
 
@@ -55,7 +90,126 @@ background: linear-gradient(90deg, rgba(33,39,59,1) 0%, rgba(75,62,83,1) 100%);*
 
 .holds-band{
     display: flex;
-    height: 100vh;
-    align-items: center;
+/*    align-items: center;*/
     justify-content: center;
+}
+
+
+.mainimagestrip{
+	border-top: 2rem solid var(--blue);
+	height: calc(30vh - 2rem);
+	min-height: 25rem;
+	max-height: 35rem;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('../img/gillian-strip.jpg');
+}
+
+
+			 @media screen and (min-width:992px) {
+                .bio-zone .flexholder{
+	display: flex;
+		flex-direction: row;
+}
+             }
+             @media screen and (max-width:991px) {
+                .bio-zone .flexholder{
+	display: flex;
+	flex-direction: column;
+}
+             }
+
+
+
+
+			 @media screen and (min-width:992px) {
+.bio-zone .flexholder .imageside{
+height: 100%;
+width: 100%;
+max-width: calc(15vw + 1.5rem);
+}
+
+             .bio-zone .flexholder .imageside figure{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+width: 100%;
+padding: 0;
+margin: 0;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.bio-zone .flexholder .imageside figure img{
+opacity: 0;
+width: 15vw;
+height: 15vw;
+}   
+             }
+             @media screen and (max-width:991px) {
+                .bio-zone .flexholder .imageside figure{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+width: 100%;
+padding: 0;
+margin: 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 3rem;
+}
+
+.bio-zone .flexholder .imageside figure img{
+opacity: 0;
+width: 20rem;
+height: 20rem;
+}
+             }
+
+
+.bio-zone .flexholder .textside{
+	padding: 0 1rem 1rem 1rem;
+}
+.bio-zone .flexholder .textside h2:first-child{
+margin-top: 0;
+}
+
+
+
+			 @media screen and (min-width:992px) {
+               .testimonial-zone .flexholder{
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 0.5rem;
+	column-gap: 0.5rem;
+		flex-direction: row;
+} 
+.testimonial-zone .flexholder div{
+	max-width: calc(50% - 1rem);
+}
+
+             }
+             @media screen and (max-width:991px) {
+                .testimonial-zone .flexholder{
+	display: flex;
+	flex-direction: column;
+}
+             }
+
+
+footer{
+	background: var(--midnight-blue);
+	padding: 0.5rem;
+	text-align: center;
+}
+
+footer p{
+	color: #fff;
 }
