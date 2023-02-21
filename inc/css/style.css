@@ -1,10 +1,10 @@
 
 :root {
-  --blue: #2E8BC0;
+  --blue: #38b6ff;
    --baby-blue: #B1D4E0;
   --midnight-blue: #145DA0;
   --darkblue: #0C2D48;
-  --orange: #eba423;
+  --orange: #bb933a;
 }
 
 body{
@@ -44,7 +44,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 h1,h2,h3,h4,h5{
 		font-weight: 300;
 	line-height: 1em;
-	color: var(--blue);
+	color: var(--midnight-blue);
 }
 
 h1{
@@ -94,16 +94,34 @@ background: linear-gradient(90deg, rgba(33,39,59,1) 0%, rgba(75,62,83,1) 100%);*
     justify-content: center;
 }
 
-
 .mainimagestrip{
-	border-top: 2rem solid var(--blue);
+		border-top: 1rem solid var(--midnight-blue);
 	height: calc(30vh - 2rem);
-	min-height: 25rem;
+	min-height: 30rem;
 	max-height: 35rem;
+	position: relative;
+	background: #000;
+	    display: flex;
+}
+
+.mainimagestrip figure{
+	margin: 0;
+	padding: 0;
+position: absolute;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url('../img/gillian-strip.jpg');
+opacity: 0.4;
+height: 100%;
+width: 100%;
+}
+
+.mainimagestrip img{
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    	min-height: 25rem
 }
 
 
