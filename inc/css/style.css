@@ -117,12 +117,24 @@ height: 100%;
 width: 100%;
 }
 
-.mainimagestrip img{
+
+			 @media screen and (min-width:992px) {
+                .mainimagestrip img{
     margin: 0 auto;
     position: relative;
     display: block;
     	min-height: 25rem
 }
+             }
+             @media screen and (max-width:991px) {
+                .mainimagestrip img{
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    	min-height: 15rem
+}
+             }
+
 
 
 			 @media screen and (min-width:992px) {
