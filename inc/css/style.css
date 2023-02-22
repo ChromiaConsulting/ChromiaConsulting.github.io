@@ -1,10 +1,10 @@
 
 :root {
-  --blue: #38b6ff;
-   --baby-blue: #B1D4E0;
-  --midnight-blue: #145DA0;
-  --darkblue: #0C2D48;
-  --orange: #bb933a;
+--blue: #38b6ff;
+--baby-blue: #B1D4E0;
+--midnight-blue: #145DA0;
+--darkblue: #0C2D48;
+--orange: #bb933a;
 }
 
 body{
@@ -17,7 +17,7 @@ min-height: 100vh;
 
 
 section{
-	padding: 3rem 0;
+padding: 3rem 0;
 }
 
 section:nth-child(even){
@@ -35,143 +35,164 @@ opacity: 0.3;
 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1004%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(44%2c 18%2c 69%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c94 C 57.6%2c124.8 172.8%2c252.4 288%2c248 C 403.2%2c243.6 460.8%2c92.6 576%2c72 C 691.2%2c51.4 748.8%2c150.2 864%2c145 C 979.2%2c139.8 1036.8%2c32.6 1152%2c46 C 1267.2%2c59.4 1382.4%2c178.8 1440%2c212L1440 560L0 560z' fill='rgba(53%2c 22%2c 83%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c291 C 96%2c340.4 288%2c530.8 480%2c538 C 672%2c545.2 768%2c349.4 960%2c327 C 1152%2c304.6 1344%2c406.2 1440%2c426L1440 560L0 560z' fill='rgba(27%2c 10%2c 43%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1004'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");background-size: cover;
 }
 .containo{
-	width: 90vw;
-	margin: 0 auto;
-	max-width: 1340px;
-	position: relative;
+width: 90vw;
+margin: 0 auto;
+max-width: 1340px;
+position: relative;
 }
 
 h1,h2,h3,h4,h5{
-		font-weight: 300;
-	line-height: 1em;
-	color: var(--midnight-blue);
+font-weight: 300;
+line-height: 1em;
+color: var(--midnight-blue);
 }
 
 h1{
-		font-weight: 900;
-	font-size: calc(2rem + 0.25vw);
+font-weight: 900;
+font-size: calc(2rem + 0.25vw);
 }
 
 
+
+@media screen and (min-width:992px) {
+.fleximage_title_contain{
+display: flex;
+flex-direction: row;
+}
+
+}
+@media screen and (max-width:991px) {
+.fleximage_title_contain{
+display: flex;
+flex-direction: column;
+}          
+}
+
 #home .titlezone{
-		padding: 0 1rem;
+padding: 0 1rem;
 }
 
 #home .titlezone hr{
-	border: 2px solid var(--orange);
-	max-width: 10rem;
-	margin-left: 0;
+border: 2px solid var(--orange);
+max-width: 10rem;
+margin-left: 0;
 }
 
 #home .titlezone h1 span{
-	font-family: 300 !important;
+font-family: 300 !important;
+}
+
+#home .titlezone h2{
+max-width: 30rem;
 }
 
 p, a, .icono{
-	font-weight: 300;
-	font-size: 1rem;
-	color: var(--darkblue);
-	text-decoration: none;
-	display: flex;
-	align-items: center;
+font-weight: 300;
+font-size: 1rem;
+color: var(--darkblue);
+text-decoration: none;
+display: flex;
+align-items: center;
 }
 
 .icono{
-	fill: var(--blue);
-	margin-right: 0.5rem;
+fill: var(--blue);
+margin-right: 0.5rem;
 }
 
 .centered-band{
 /*background: rgb(33,39,59);
 background: linear-gradient(90deg, rgba(33,39,59,1) 0%, rgba(75,62,83,1) 100%);*/
-	color: #fff;
-	padding: 1rem;
+color: #fff;
+padding: 1rem;
 }
 
 .holds-band{
-    display: flex;
+display: flex;
 /*    align-items: center;*/
-    justify-content: center;
+justify-content: center;
 }
 
 .mainimagestrip{
-		border-top: 1rem solid var(--midnight-blue);
-	height: calc(30vh - 2rem);
-	min-height: 30rem;
-	max-height: 35rem;
-	position: relative;
-	background: #000;
-	    display: flex;
+border-top: 1rem solid var(--midnight-blue);
+height: calc(30vh - 2rem);
+min-height: 30rem;
+max-height: 35rem;
+position: relative;
+background: #000;
+display: flex;
 }
 
 .mainimagestrip figure{
-	margin: 0;
-	padding: 0;
+margin: 0;
+padding: 0;
 position: absolute;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url('../img/gillian-strip.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-image: url('../img/gillian-strip.jpg');
 opacity: 0.4;
 height: 100%;
 width: 100%;
 }
 
 
-			 @media screen and (min-width:992px) {
-                .mainimagestrip img{
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    	min-height: 25rem
+@media screen and (min-width:992px) {
+.mainimagestrip img{
+margin: 0 auto;
+position: relative;
+display: block;
+min-height: 25rem
 }
-             }
-             @media screen and (max-width:991px) {
-                .mainimagestrip img{
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    	min-height: 15rem
 }
-             }
-
-
-
-			 @media screen and (min-width:992px) {
-                .bio-zone .flexholder{
-	display: flex;
-		flex-direction: row;
+@media screen and (max-width:991px) {
+.mainimagestrip img{
+margin: 0 auto;
+position: relative;
+display: block;
+min-height: 15rem
 }
-             }
-             @media screen and (max-width:991px) {
-                .bio-zone .flexholder{
-	display: flex;
-	flex-direction: column;
 }
-             }
+
+
+
+@media screen and (min-width:992px) {
+.bio-zone .flexholder{
+display: flex;
+flex-direction: row;
+}
+}
+@media screen and (max-width:991px) {
+.bio-zone .flexholder{
+display: flex;
+flex-direction: column;
+}
+}
 
 
 
 
-			 @media screen and (min-width:992px) {
+@media screen and (min-width:992px) {
 .bio-zone .flexholder .imageside{
 height: 100%;
 width: 100%;
-max-width: calc(15vw + 1.5rem);
+max-width: calc(10rem + 1.5rem);
 }
 
-             .bio-zone .flexholder .imageside figure{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100%;
+.bio-zone .flexholder .imageside figure{
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100%;
 width: 100%;
 padding: 0;
 margin: 0;
-    width: 15vw;
-    height: 15vw;
-    border-radius: 50%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+width: 15vw;
+height: 15vw;
+max-width: 10rem;
+max-height: 10rem;
+border-radius: 50%;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .bio-zone .flexholder .imageside figure img{
@@ -179,21 +200,23 @@ opacity: 0;
 width: 15vw;
 height: 15vw;
 }   
-             }
-             @media screen and (max-width:991px) {
-                .bio-zone .flexholder .imageside figure{
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100%;
+}
+@media screen and (max-width:991px) {
+.bio-zone .flexholder .imageside figure{
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100%;
 width: 100%;
 padding: 0;
 margin: 0;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-bottom: 3rem;
+width: 15rem;
+height: 15rem;
+border-radius: 50%;
+margin: 0 auto;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+margin-top: 1.5rem;
+margin-bottom: 1.5rem;
 }
 
 .bio-zone .flexholder .imageside figure img{
@@ -201,11 +224,11 @@ opacity: 0;
 width: 20rem;
 height: 20rem;
 }
-             }
+}
 
 
 .bio-zone .flexholder .textside{
-	padding: 0 1rem 1rem 1rem;
+padding: 0 1rem 1rem 1rem;
 }
 .bio-zone .flexholder .textside h2:first-child{
 margin-top: 0;
@@ -213,33 +236,33 @@ margin-top: 0;
 
 
 
-			 @media screen and (min-width:992px) {
-               .testimonial-zone .flexholder{
-	display: flex;
-	flex-wrap: wrap;
-	row-gap: 0.5rem;
-	column-gap: 0.5rem;
-		flex-direction: row;
+@media screen and (min-width:992px) {
+.testimonial-zone .flexholder{
+display: flex;
+flex-wrap: wrap;
+row-gap: 0.5rem;
+column-gap: 0.5rem;
+flex-direction: row;
 } 
 .testimonial-zone .flexholder div{
-	max-width: calc(50% - 1rem);
+max-width: calc(50% - 1rem);
 }
 
-             }
-             @media screen and (max-width:991px) {
-                .testimonial-zone .flexholder{
-	display: flex;
-	flex-direction: column;
 }
-             }
+@media screen and (max-width:991px) {
+.testimonial-zone .flexholder{
+display: flex;
+flex-direction: column;
+}
+}
 
 
 footer{
-	background: var(--midnight-blue);
-	padding: 0.5rem;
-	text-align: center;
+background: var(--midnight-blue);
+padding: 0.5rem;
+text-align: center;
 }
 
 footer p{
-	color: #fff;
+color: #fff;
 }
