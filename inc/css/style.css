@@ -64,9 +64,15 @@ flex-direction: row;
 @media screen and (max-width:991px) {
 .fleximage_title_contain{
 display: flex;
-flex-direction: column;
-}          
+    flex-direction: column;
+    align-items: center;
 }
+
+.fleximage_title_contain img{
+	    max-height: 10rem;
+}
+
+}          
 
 #home .titlezone{
 padding: 0 1rem;
@@ -113,7 +119,8 @@ display: flex;
 justify-content: center;
 }
 
-.mainimagestrip{
+			 @media screen and (min-width:992px) {
+                .mainimagestrip{
 border-top: 1rem solid var(--midnight-blue);
 height: calc(30vh - 2rem);
 min-height: 30rem;
@@ -122,6 +129,18 @@ position: relative;
 background: #000;
 display: flex;
 }
+             }
+             @media screen and (max-width:991px) {
+                .mainimagestrip{
+border-top: 1rem solid var(--midnight-blue);
+height: calc(10vh - 2rem);
+min-height: 10rem;
+max-height: 10rem;
+position: relative;
+background: #000;
+display: flex;
+}
+             }
 
 .mainimagestrip figure{
 margin: 0;
@@ -210,8 +229,8 @@ height: 100%;
 width: 100%;
 padding: 0;
 margin: 0;
-width: 15rem;
-height: 15rem;
+width: 10rem;
+height: 10rem;
 border-radius: 50%;
 margin: 0 auto;
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -265,4 +284,17 @@ text-align: center;
 
 footer p{
 color: #fff;
+}
+
+/********************/
+/*** ********** *****/
+/********************/
+.introsection h2{
+	font-weight: 400;
+}
+.introsection h3{
+	color: var(--midnight-blue);
+}
+.introsection ul li{
+	color: var(--midnight-blue);
 }
