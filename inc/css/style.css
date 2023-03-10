@@ -254,6 +254,9 @@ margin-top: 0;
 }
 
 
+.testimonial-zone{
+padding: 0 1rem 1rem 1rem;
+}
 
 @media screen and (min-width:992px) {
 .testimonial-zone .flexholder{
@@ -265,26 +268,56 @@ flex-direction: row;
 } 
 .testimonial-zone .flexholder div{
 max-width: calc(50% - 1rem);
+display: flex;
+flex-direction: column;
+}
+.testimonial-zone .flexholder div p{
+display: block;
 }
 
+.testimonial-zone .flexholder div p strong{
+margin-top: 0.5rem;
+display: block;
+font-weight: 600;
+font-style: italic;
+}
 }
 @media screen and (max-width:991px) {
 .testimonial-zone .flexholder{
 display: flex;
 flex-direction: column;
 }
+
+.testimonial-zone .flexholder div{
+display: flex;
+flex-direction: column;
+}
+.testimonial-zone .flexholder div p{
+display: block;
+}
+.testimonial-zone .flexholder div p strong{
+margin-top: 0.5rem;
+display: block;
+font-weight: 600;
+font-style: italic;
+}
 }
 
 
 footer{
 background: var(--midnight-blue);
-padding: 0.5rem;
+padding: 0.5rem 3rem;
 text-align: center;
 }
 
 footer p{
 color: #fff;
+text-align: center;
+width: 100%;
+display: block;
 }
+
+
 
 /********************/
 /*** ********** *****/
